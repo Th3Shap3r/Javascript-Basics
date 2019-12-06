@@ -1,3 +1,4 @@
+
 # Table of Contents
 
 1. [String Interpolation](#string-interpolation)
@@ -101,7 +102,7 @@ if (stopLight === 'green' && pedestrians === 0) {
 
 - **- || (or) operator**
 
-   When using the || operator, only one of the conditions must evaluate to true for the overall statement to evaluate to true. In the code example above, if either day === 'Saturday' or day === 'Sunday' evaluates to true the if‘s condition will evaluate to true and its code block will execute. If the first condition in an || statement evaluates to true, the second condition won’t even be checked. Only if day === 'Saturday' evaluates to false will day === 'Sunday' be evaluated. The code in the else statement above will execute only if both comparisons evaluate to false.    
+  When using the || operator, only one of the conditions must evaluate to true for the overall statement to evaluate to true. In the code example above, if either day === 'Saturday' or day === 'Sunday' evaluates to true the if‘s condition will evaluate to true and its code block will execute. If the first condition in an || statement evaluates to true, the second condition won’t even be checked. Only if day === 'Saturday' evaluates to false will day === 'Sunday' be evaluated. The code in the else statement above will execute only if both comparisons evaluate to false.    
 
 ```javascript
     if (day === 'Saturday' || day === 'Sunday') {
@@ -221,7 +222,7 @@ isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lig
 
   
 
-## Function Declarations
+## <u>Function Declarations</u>
 
 -  A *function* is a reusable block of code that groups together a sequence of statements to perform a specific task. 
 
@@ -260,7 +261,7 @@ const rectangleArea = (width, height) => {
 
 
 
-## Scope
+## <u>Scope</u>
 
 ​	Scope defines where variables can be accessed or referenced. While some  variables can be accessed from anywhere within a program, other  variables may only be available in a specific context. 
 
@@ -316,7 +317,7 @@ console.log(num); // Prints 100
 
 
 
-## Arrays
+## <u>Arrays</u>
 
 ​	Arrays are JavaScript’s way of making lists. Arrays can store any data types (including strings, numbers, and booleans).
 
@@ -361,13 +362,13 @@ console.log(nestedArr[1][0]); // Output: 2
 
 
 
-## Loops
+## <u>Loops</u>
 
 ​	A *loop* is a programming tool that repeats a set of instructions until a specified condition, called a *stopping condition* is reached.
 
 
 
-**The For Loop** - 
+**The For Loop** 
 
 ​	A `for` loop contains three expressions separated by `;` inside the parentheses: 
 
