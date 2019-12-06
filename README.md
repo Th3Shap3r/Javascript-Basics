@@ -1,6 +1,18 @@
-JavaScript
+# Table of Contents
 
-## String Interpolation 
+1. [String Interpolation](#string-interpolation)
+2. [Template Literals](#template-literals)
+3. [Conditional Statements](#conditional-statements)
+4. [Function Declarations](#function-declarations)
+5. [Scope](#scope)
+6. [Arrays](#arrays)
+7. [Loops](#loops)
+
+---
+
+
+
+## <u>String Interpolation</u> 
 
 ```javascript
 const myPet = 'armadillo';
@@ -12,7 +24,7 @@ console.log(`I own a pet ${myPet}.`);
 
 
 
-## Template Literals
+## <u>Template Literals</u>
 
 ```javascript
 // STRING CONCATENATION
@@ -24,15 +36,15 @@ console.log('Hi, I\'m ' + p.name + '! Call me "' + p.nn + '".');
 console.log(`Hi, I'm ${p.name}! Call me "${p.nn}".`);
 ```
 
-
-
 ---
 
 
 
-## Conditional Statements
+## <u>Conditional Statements</u>
 
-- **if keyword** - 
+
+
+#### 	If keyword
 
 ```javascript
 let sale = false;
@@ -44,7 +56,7 @@ if (sale) {
 
 
 
-- **If...Else Statements** - 
+#### 	If...Else Statements
 
 ```javascript
 if (false) {
@@ -57,7 +69,7 @@ if (false) {
 
 
 
-- **Comparison Operators** -
+#### 	Comparison Operators
 
 ```javascript
 let hungerLevel = 10;
@@ -72,7 +84,7 @@ if (hungerLevel > 7) {
 
 #### Logical Operators
 
-- **&& (and operator) :**
+- **&& (and operator) **
 
   When using the && operator, both conditions must evaluate to true for the entire condition to evaluate to true and execute. Otherwise, if either condition is false, the && condition will evaluate to false and the else block will execute. 
 
@@ -87,9 +99,9 @@ if (stopLight === 'green' && pedestrians === 0) {
 
 
 
-- **- || (or) operator:**
+- **- || (or) operator**
 
-  When using the || operator, only one of the conditions must evaluate to true for the overall statement to evaluate to true. In the code example above, if either day === 'Saturday' or day === 'Sunday' evaluates to true the if‘s condition will evaluate to true and its code block will execute. If the first condition in an || statement evaluates to true, the second condition won’t even be checked. Only if day === 'Saturday' evaluates to false will day === 'Sunday' be evaluated. The code in the else statement above will execute only if both comparisons evaluate to false.    
+   When using the || operator, only one of the conditions must evaluate to true for the overall statement to evaluate to true. In the code example above, if either day === 'Saturday' or day === 'Sunday' evaluates to true the if‘s condition will evaluate to true and its code block will execute. If the first condition in an || statement evaluates to true, the second condition won’t even be checked. Only if day === 'Saturday' evaluates to false will day === 'Sunday' be evaluated. The code in the else statement above will execute only if both comparisons evaluate to false.    
 
 ```javascript
     if (day === 'Saturday' || day === 'Sunday') {
@@ -102,7 +114,7 @@ if (stopLight === 'green' && pedestrians === 0) {
 
 
 
-   - **! (not) operator:**
+   - **! (not) operator**
 
      Essentially, the ! operator will either take a true value and pass back false, or it will take a false value and pass back true.
 
@@ -116,7 +128,7 @@ console.log(!sleepy); // Prints true
 
 
 
-- **Ternary Operator -**
+- **Ternary Operator **
 
   ​	We can use a *ternary operator* to simplify an `if...else` statement. 
 
@@ -134,12 +146,11 @@ if (isNightTime) {
 
 ```javascript
 isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
-
 ```
 
 
 
-- **Else If Statements** - 
+- **Else If Statements**
 
   ​	We can add more conditions to our `if...else` with an `else if` statement. The `else if` statement allows for more than two possible outcomes. You can add as many `else if` statements as you’d like, to make more complex conditionals! 
 
@@ -155,12 +166,11 @@ isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lig
   } else {
     console.log('Caution, unknown!');
   }
-  
   ```
 
 
 
-- **The switch keyword** - 
+- **The switch keyword**
 
   ​	 `else if` statements are a great tool if we need to check multiple conditions. In programming,  we often find ourselves needing to check multiple values and handling  each of them differently. 
 
@@ -183,12 +193,11 @@ isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lig
   }
   
   // Prints 'Papayas are $1.29'
-  
   ```
 
 
 
-#### Summary - 
+#### Summary
 
 - An `if` statement checks a condition and will execute a task if that condition evaluates to `true`.
 
@@ -208,8 +217,6 @@ isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lig
 
 - A `switch` statement can be used to simplify the process of writing multiple `else if` statements. The `break` keyword stops the remaining `case`s from being checked and executed in a `switch` statement.
 
-  
-
   ---
 
   
@@ -223,7 +230,6 @@ function sayThanks(name) {
   console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
 }
 sayThanks('Cole'); // op Thank you .... Cole ...
-
 ```
 
 
@@ -237,7 +243,6 @@ function greeting (name = 'stranger') {
 
 greeting('Nick') // Output: Hello, Nick!
 greeting() // Output: Hello, stranger!
-
 ```
 
 
@@ -249,10 +254,7 @@ const rectangleArea = (width, height) => {
   let area = width * height;
   return area;
 };
-
 ```
-
-
 
 ---
 
@@ -278,7 +280,6 @@ const returnSkyColor = () => {
 };
 
 console.log(returnSkyColor()); // blue
-
 ```
 
 
@@ -293,7 +294,6 @@ const logSkyColor = () => {
 
 logSkyColor(); // blue 
 console.log(color); // ReferenceError
-
 ```
 
 
@@ -310,10 +310,7 @@ const logNum = () => {
 
 logNum(); // Prints 100
 console.log(num); // Prints 100
-
 ```
-
-
 
 ---
 
@@ -358,10 +355,7 @@ const nestedArr = [[1], [2, 3]];
 
 console.log(nestedArr[1]); // Output: [2, 3]
 console.log(nestedArr[1][0]); // Output: 2
-
 ```
-
-
 
 ---
 
@@ -381,7 +375,6 @@ console.log(nestedArr[1][0]); // Output: 2
 for (let counter = 0; counter < 4; counter++) {
   console.log(counter);
 }
-
 ```
 
 
